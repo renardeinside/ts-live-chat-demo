@@ -1,5 +1,5 @@
 import * as express from 'express';
-import * as socketIo from 'socket.io';
+import * as SocketIO from 'socket.io';
 import { ChatEvent } from './constants';
 import { ChatMessage } from './types';
 import { createServer, Server } from 'http';
