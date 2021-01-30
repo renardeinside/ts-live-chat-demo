@@ -1,9 +1,11 @@
 import * as express from 'express';
-import * as SocketIO from 'socket.io';
 import { ChatEvent } from './constants';
 import { ChatMessage } from './types';
 import { createServer, Server } from 'http';
+import * as SocketIO from 'socket.io'; // this is a namespace-based import for types definition
+
 var cors = require('cors');
+var socketIo = require('socket.io'); // this is a require-based import to call the function directly
 
 export class ChatServer {
   public static readonly PORT: number = 8080;
